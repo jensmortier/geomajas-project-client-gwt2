@@ -64,8 +64,55 @@
 
 	<dependencyManagement>
 		<dependencies>
-
-			<!-- Artifacts within this project -->
+			<dependency>
+				<groupId>org.geomajas.project</groupId>
+				<artifactId>geomajas-project-server</artifactId>
+				<version>${version-geomajas-backend}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.geomajas.project</groupId>
+				<artifactId>geomajas-project-client-gwt2</artifactId>
+				<version>${version-geomajas-client-gwt2-other}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.geomajas.plugin</groupId>
+				<artifactId>geomajas-client-gwt2-plugin-editing-impl</artifactId>
+				<version>${version-geomajas-client-gwt2-other}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.geomajas.plugin</groupId>
+				<artifactId>geomajas-client-gwt2-plugin-editing-common</artifactId>
+				<version>${version-geomajas-client-gwt2-other}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.geomajas</groupId>
+				<artifactId>geomajas-client-gwt2-impl</artifactId>
+				<version>${version-geomajas-client-gwt2-other}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.geomajas</groupId>
+				<artifactId>geomajas-client-gwt2-example-jar</artifactId>
+				<version>${version-geomajas-client-gwt2-other}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.geomajas</groupId>
+				<artifactId>geomajas-client-gwt2-example-base</artifactId>
+				<version>${version-geomajas-client-gwt2-other}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.geomajas</groupId>
+				<artifactId>geomajas-client-gwt2-api</artifactId>
+				<version>${version-geomajas-client-gwt2-other}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.geomajas</groupId>
+				<artifactId>geomajas-client-gwt2-server-extension</artifactId>
+				<version>${version-geomajas-client-gwt2-other}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.geomajas</groupId>
 				<artifactId>geomajas-client-common-gwt</artifactId>
@@ -76,62 +123,9 @@
 				<artifactId>geomajas-client-common-gwt-command</artifactId>
 				<version>${version-geomajas-client-gwt2-other}</version>
 			</dependency>
-
-			<dependency>
-				<groupId>org.geomajas</groupId>
-				<artifactId>geomajas-client-gwt2-api</artifactId>
-				<version>${version-geomajas-client-gwt2-other}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>org.geomajas</groupId>
-				<artifactId>geomajas-client-gwt2-impl</artifactId>
-				<version>${version-geomajas-client-gwt2-other}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.geomajas</groupId>
-				<artifactId>geomajas-client-gwt2-impl</artifactId>
-				<version>${version-geomajas-client-gwt2-other}</version>
-				<classifier>tests</classifier>
-			</dependency>
-
-			<dependency>
-				<groupId>org.geomajas</groupId>
-				<artifactId>geomajas-client-gwt2-server-extension</artifactId>
-				<version>${version-geomajas-client-gwt2-other}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>org.geomajas</groupId>
-				<artifactId>geomajas-client-gwt2-example-base</artifactId>
-				<version>${version-geomajas-client-gwt2-other}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>org.geomajas</groupId>
-				<artifactId>geomajas-client-gwt2-example-jar</artifactId>
-				<version>${version-geomajas-client-gwt2-other}</version>
-			</dependency>
-
-			<!-- Editing plugin -->
 			<dependency>
 				<groupId>org.geomajas.plugin</groupId>
-				<artifactId>geomajas-client-gwt2-plugin-editing-common</artifactId>
-				<version>${version-geomajas-client-gwt2-other}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.geomajas.plugin</groupId>
-				<artifactId>geomajas-client-gwt2-plugin-editing-impl</artifactId>
-				<version>${version-geomajas-client-gwt2-other}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.geomajas.plugin</groupId>
-				<artifactId>geomajas-client-gwt2-plugin-editing-server-extension</artifactId>
-				<version>${version-geomajas-client-gwt2-other}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.geomajas.plugin</groupId>
-				<artifactId>geomajas-client-gwt2-plugin-editing-example-jar</artifactId>
+				<artifactId>geomajas-client-gwt2-plugin-corewidget</artifactId>
 				<version>${version-geomajas-client-gwt2-other}</version>
 			</dependency>
 
@@ -246,15 +240,6 @@
 				<groupId>org.geotools</groupId>
 				<artifactId>gt-wms</artifactId>
 				<version>9.5</version>
-			</dependency>
-
-			<!-- Other Geomajas artifacts -->
-			<dependency>
-				<groupId>org.geomajas.project</groupId>
-				<artifactId>geomajas-project-server</artifactId>
-				<version>${version-geomajas-backend}</version>
-				<type>pom</type>
-				<scope>import</scope>
 			</dependency>
 
 			<!-- Other artifacts -->
